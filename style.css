@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8d5ef3;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+     font-weight: bold;
+    background: linear-gradient(270deg, #ff0055, #ffcc00, #33ff00, #00ffee, #ff00ff);
+    background-size: 1000% 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+h2, h3 {
+    color: white;
+    margin: 15px 0;
+    background-color: #491B87;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+#botao1 {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+ #botao2 {
+  max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+ }
+
+.balao {
+  position: absolute;
+  background: red; 
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: subir 2s ease-out forwards;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+
+@keyframes subir {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
+  }
+}
+
+#mensagem2 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4b0082;
+}
+
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #5e17eb;
+    color: white;
+}
+
+ul, ol {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+textarea, input[type="text"] {
+    padding: 8px;
+    margin-top: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #555;
+}
